@@ -4,7 +4,7 @@ type Props = {
   label: string;
   onPress: () => void;
   variant?: "default" | "secondary" | "accent";
-  span?: number;
+  span?: 1 | 2;
 };
 
 export default function Key({
@@ -19,10 +19,13 @@ export default function Key({
     accent: "bg-orange-500 text-white",
   };
 
+  const spanClass =
+    span === 2 ? "col-span-2" : "col-span-1";
+
   return (
     <Button
       onClick={onPress}
-      className={`h-16 text-2xl rounded-full ${styles[variant]} col-span-${span}`}
+      className={`h-16 text-2xl rounded-full ${styles[variant]} ${spanClass}`}
     >
       {label}
     </Button>
