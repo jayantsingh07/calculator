@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🍎 Apple Style Calculator
 
-## Getting Started
+A clean, minimal **Apple-inspired calculator** built with **Next.js, TypeScript, Tailwind CSS, and shadcn/ui**.  
+Focused on simplicity, smooth UI, and clean architecture.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✨ Features
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- ➕ Addition  
+- ➖ Subtraction  
+- ✖️ Multiplication  
+- ➗ Division  
+- 🧹 Clear (AC)
+- ⌫ Backspace
+- 🍎 Apple-style dark UI
+- 📱 Fully responsive
+- ⚡ Fast & lightweight
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠 Tech Stack
 
-## Learn More
+- **Next.js (App Router)**
+- **TypeScript**
+- **Tailwind CSS**
+- **shadcn/ui**
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Project Structure
+src/
+├── app/
+│ ├── layout.tsx
+│ ├── page.tsx
+│ └── globals.css
+│
+├── components/
+│ ├── calculator/
+│ │ ├── index.tsx
+│ │ ├── display.tsx
+│ │ └── key.tsx
+│ │
+│ └── ui/ # shadcn/ui components
+│
+├── lib/
+│ └── math.ts
+│
+└── types/
+└── calculator.ts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## 🧠 Architecture Overview
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **UI & Logic separated**
+- Calculator logic handled in `lib/math.ts`
+- Reusable components for buttons & display
+- Strong type safety using TypeScript
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 🚀 Getting Started
+## Clone the Repository
+
+git clone https://github.com/jayantsingh07/apple-style-calculator.git
+
