@@ -40,7 +40,7 @@ export default function Calculator() {
     <Card className="w-85 rounded-3xl bg-black p-4 shadow-2xl">
       <Display value={current} />
 
-      <div className="grid grid-cols-4 gap-3 mt-4">
+      <div className="grid grid-cols-4 grid-flow-row gap-3 mt-4">
         <Key label="AC" onPress={clear} variant="secondary" span={2} />
         <Key label="⌫" onPress={() => setCurrent(current.slice(0, -1) || "0")} variant="secondary" />
         <Key label="÷" onPress={() => inputOperator("÷")} variant="accent" />
