@@ -27,29 +27,6 @@ Focused on simplicity, smooth UI, and clean architecture.
 - **shadcn/ui**
 
 ---
-
-## 📁 Project Structure
-src/
-├── app/
-│ ├── layout.tsx
-│ ├── page.tsx
-│ └── globals.css
-│
-├── components/
-│ ├── calculator/
-│ │ ├── index.tsx
-│ │ ├── display.tsx
-│ │ └── key.tsx
-│ │
-│ └── ui/ # shadcn/ui components
-│
-├── lib/
-│ └── math.ts
-│
-└── types/
-└── calculator.ts
-
-
 ## 🧠 Architecture Overview
 
 - **UI & Logic separated**
